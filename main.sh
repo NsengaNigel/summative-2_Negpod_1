@@ -28,7 +28,9 @@ update_student_record() {
 }
 
 #deleting the student record by ID
-delete_student_record()
+delete_student_record(){
+	read -p "Enter your Student ID" delete_ID
+}
 
 #Home
 
