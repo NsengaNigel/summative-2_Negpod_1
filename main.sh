@@ -27,6 +27,8 @@ update_student_record() {
     fi
 }
 
+#deleting the student record by ID
+
 #Home
 
 while true; do
