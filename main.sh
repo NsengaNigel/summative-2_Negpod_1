@@ -29,6 +29,12 @@ echo "5. Exit"
 
 read -p "Select from the drop down" Choice
 
+#Updating student record by ID
+update_student_record()
+
+
+
+
 case $Choice in
 1) create_student_record ;;
 2) view_all_students ;;
