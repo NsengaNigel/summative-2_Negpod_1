@@ -11,3 +11,9 @@ if [ ! -d "$directory" ]; then
 else
 	echo "Directory already exists: $directory"
 fi
+
+# move files to the directory
+
+mv main.sh Students-list_1023.txt Select-emails.sh student-emails.txt "$directory/"
+
+echo "Files moved successfully to $directory"
