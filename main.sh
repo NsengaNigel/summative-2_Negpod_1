@@ -3,10 +3,11 @@ Student_record="students-list_1023.txt"
 
 #creating a student record
 create_student_record() { echo "Enter student details:"
-	read -p "Student ID:" Student_ID
-	read -p "Student name:" Student_name
-	read -p "Student age:" Student_age
-	read -p "Student email:" Student_email
+	read -p "Student ID:" student_ID
+	read -p "Student name:" student_name
+	read -p "Student age:" student_age
+	read -p "Student email:" student_email
+	echo "$student_ID,$student_name,$student_age,$student_email" >> "$Student_record"
 
 #Updating Student record 01 by ID
 update_student_record() { 
