@@ -30,6 +30,13 @@ update_student_record() {
 #deleting the student record by ID
 delete_student_record(){
 	read -p "Enter your Student ID" delete_ID
+
+    if [ -f students-list_1023.txt ] && [[ $(grep -c "$delete_ID" students-list_1023.txt) -gt 0 ]]; then
+       sed -i "/$delete_ID/d" students-list_1023.txt
+       echo "\nStudent deleted successfully\n"
+    else
+       echo "Student with ID $id has been deleted."
+    fi
 }
 
 #Home
