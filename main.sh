@@ -8,6 +8,7 @@ create_student_record() { echo "Enter student details:"
 	read -p "Student age:" student_age
 	read -p "Student email:" student_email
 	echo "$student_ID,$student_name,$student_age,$student_email" >> "$Student_record"
+	echo "Student has been successfully registered" }
 
 #Updating Student record 01 by ID
 update_student_record() { 
@@ -23,6 +24,18 @@ update_student_record() {
 
     else
     echo "Student not found"
+    fi
+}
+
+#deleting the student record by ID
+delete_student_record(){
+	read -p "Enter your Student ID" delete_ID
+
+    if [ -f students-list_1023.txt ] && [[ $(grep -c "$delete_ID" students-list_1023.txt) -gt 0 ]]; then
+       sed -i "/$delete_ID/d" students-list_1023.txt
+       echo "\nStudent deleted successfully\n"
+    else
+       echo "Student with ID $id has been deleted."
     fi
 }
 
