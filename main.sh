@@ -1,4 +1,8 @@
 #!/bin/bash
+Student_record="students-list_1023.txt"
+
+#creating a student record
+create_student_record(
 
 #Updating Student record 01 by ID
 update_student_record() { 
@@ -13,7 +17,7 @@ update_student_record() {
 	    echo "the user has been updated"
 
     else
-	    echo "Student not found"
+    echo "Student not found"
     fi
 }
 
