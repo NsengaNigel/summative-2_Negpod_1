@@ -8,6 +8,7 @@ create_student_record() { echo "Enter student details:"
 	read -p "Student age:" student_age
 	read -p "Student email:" student_email
 	echo "$student_ID,$student_name,$student_age,$student_email" >> "$Student_record"
+	echo "Student has been successfully registered" }
 
 #Updating Student record 01 by ID
 update_student_record() { 
