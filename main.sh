@@ -3,6 +3,9 @@ Student_record="students-list_1023.txt"
 
 #creating a student record
 create_student_record() { echo "Enter student details:"
+	read -p "Student ID:" Student_ID
+	read -p "Student name:" Student_name
+	read -p "Student age:" Student_age
 
 #Updating Student record 01 by ID
 update_student_record() { 
