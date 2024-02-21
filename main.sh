@@ -28,6 +28,7 @@ update_student_record() {
 }
 
 #deleting the student record by ID
+delete_student_record()
 
 #Home
 
