@@ -40,21 +40,17 @@ delete_student_record(){
 }
 
 #Home
-#Updating student record by ID
-update_student_record(){
-
-    read -p "Enter your Student ID" update_ID
-    if [ -f students-list_1023.txt ] && [[ $(grep -c "$update_ID" students-list_1023.txt) -gt 0 ]]; then
-	    read -p "Student name:" student_name
-	    read -p "Student age:" student_age
-	    read -p "Student email:" student_email
-
-	    sed -i "/^$update_ID,/c\\$update_ID,$student_name,$student_age,$student_email" students-list_1023.txt
-
-	    echo "the user has been updated"
-
+#Viewing all student details
+view_all_students() { 
+    if [ -s $Student_record ]; 
+        then  
+            echo "Student ID | Name | Age| Email"
+            echo "                              "
+            cat "students-list_1023.txt" | while IFS=, read -r id name age email; do
+            echo "$id | $name | $age | $email"
+        done 
     else
-	    echo "Student not found"
+    echo "No student registered"
     fi
 }
 
