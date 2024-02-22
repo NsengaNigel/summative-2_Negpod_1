@@ -40,6 +40,12 @@ delete_student_record(){
 }
 
 #Home
+#Updating student record by ID
+
+
+
+
+
 
 while true; do
 echo "ALU registration system"
