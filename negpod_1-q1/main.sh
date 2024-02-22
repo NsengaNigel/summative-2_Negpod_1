@@ -8,7 +8,8 @@ create_student_record() { echo "Enter student details:"
 	read -p "Student age:" student_age
 	read -p "Student email:" student_email
 	echo "$student_ID,$student_name,$student_age,$student_email" >> "$Student_record"
-	echo "Student has been successfully registered" }
+	echo "Student has been successfully registered" 
+}
 
 #Updating Student record 01 by ID
 update_student_record() { 
@@ -33,13 +34,12 @@ delete_student_record(){
 
     if [ -f students-list_1023.txt ] && [[ $(grep -c "$delete_ID" students-list_1023.txt) -gt 0 ]]; then
        sed -i "/$delete_ID/d" students-list_1023.txt
-       echo "\nStudent deleted successfully\n"
+       echo "Student deleted successfully"
     else
        echo "Student with ID $id has been deleted."
     fi
 }
 
-#Home
 #Viewing all student details
 view_all_students() { 
     if [ -s $Student_record ]; 
@@ -54,9 +54,7 @@ view_all_students() {
     fi
 }
 
-
-
-
+#Home
 while true; do
 echo "ALU registration system"
 echo "1. Create Student Record"
@@ -66,9 +64,6 @@ echo "4. Update Student Record"
 echo "5. Exit"
 
 read -p "Select from the drop down" Choice
-
-
-
 
 case $Choice in
 1) create_student_record ;;

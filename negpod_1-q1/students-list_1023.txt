@@ -1,0 +1,5 @@
+1,JD,20,jd@gmail.com
+2,Mary,22,mary@outlook.com
+3,Nigel,21,nigel@alustudent.com
+5,Loraine,20,loraine@gmail.com
+4,Aime,22,aime@yahoo.com
