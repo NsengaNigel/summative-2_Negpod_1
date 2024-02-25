@@ -98,7 +98,7 @@ When a user runs the shell script file “Select-emails.sh”, the app selects a
 
 ### Task 7: Automation Scripts with Linux
 - By running the “move-to-directory.sh” script file, you can move all the existing files to the directory of your choice (negpod_1-q1).
-- By learning the “backup-Negpod_ID.sh” script file, you can make a backup copy of the directory on the server.
+- By running the “backup-Negpod_ID.sh” script file, you can make a backup copy of the directory on the server.
 
 ## Video Tutorial
 https://photos.app.goo.gl/KCxjty17kDA8sWEy5
