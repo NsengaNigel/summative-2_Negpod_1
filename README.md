@@ -52,6 +52,20 @@ To create a backup copy of the directory on the server, execute the following sc
 ```bash
 ./backup-Negpod_1.sh
 ```
+Note: The ```rsync``` and ```sshpass``` commands are not available on your system by default. That being said, you will need to install them first before running backup-Negpod_1.sh
+
+```bash
+sudo apt update
+```
+
+```bash
+sudo apt install rsync
+```
+
+````bash
+sudo apt install sshpass
+````
+
 
 ## Contributors
 
