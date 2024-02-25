@@ -69,7 +69,11 @@ sudo apt install sshpass
 
 ## Contributors
 
-- 
+- NSENGA Nigel (@NNigel44)
+- Cynthia Mutie (@Muen1)
+- Jean de Dieu Muhirwa Harerimana (@JDMUHIRWA)
+- DUSHIME Don Aime Hosanna (@DUSHIME1212)
+- Irakoze Mukezwa Loraine (@IrakozeLoraine)
 
 ## How the Application Works
 
