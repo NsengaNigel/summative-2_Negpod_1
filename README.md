@@ -1,7 +1,5 @@
 # ALU Student Registration System
 
-![application menu]()
-
 This application is designed to manage the registration information of students in the Bachelor of Software Engineering cohort at ALU. It allows users to create, view, delete, and update student records efficiently. Additionally, there are automation scripts provided for Linux systems to aid in file management and backup.
 
 ## Usage
@@ -64,24 +62,25 @@ To create a backup copy of the directory on the server, execute the following sc
 ### Task 1: Create Student Record
 This option allows users to add a new student to the cohort list.
 
-![creating student record]()
-
 ### Task 2: View All Students
 After adding students, their information will be displayed with each student's details separated by the "|" character.
-
-![viewing all students]()
 
 ### Task 3: Delete Student Record
 If a student is no longer part of the cohort, users can remove their information from the list using this choice.
 
-![deleting student records]()
-
 ### Task 4: Update Student Record
 Users can edit information about a student using this option.
-
-![updating student record]()
 
 ### Task 5: Exit
 This option is used to exit the application.
 
-![exiting the application]()
+### Task 6: Selecting Emails
+
+When a user runs the shell script file “Select-emails.sh”, the app selects all student emails that have been recorded and then adds them to the file “student-emails.txt”
+
+### Task 7: Automation Scripts with Linux
+- By running the “move-to-directory.sh” script file, you can move all the existing files to the directory of your choice (negpod_1-q1).
+- By learning the “backup-Negpod_ID.sh” script file, you can make a backup copy of the directory on the server.
+
+## Video Tutorial
+https://photos.app.goo.gl/KCxjty17kDA8sWEy5
