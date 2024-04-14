@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(173, 173, 173);
+    background-image: url(images/quan-jing-5XD9S8rb5T4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150vh;
+    min-height: 100vh;
+    display: center;
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+.loading{
+    color: aliceblue;
+    line-height: 1.4;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    font: 900;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.author{
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: rgb(78, 81, 81);
+    margin: 0.6rem 2rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+.loading_anim{
+    width: 50px;
+    height: 50px;
+    border:  20px solid rgba(133, 97, 97, 0.25);
+    border-left-color: rgb(255, 255, 253);
+    border-top-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    animation: rotate 1000ms infinite linear;
+    margin-bottom: 1.9rem;
+}
+.Page {
+    
+    margin: 0 5px;
+    float: left;
+    overflow:hidden;
+    border-radius: 50px;
+    cursor:pointer;
+    box-shadow: 0px 10px 10px
+    rgba(0,0,0,0.1);
+    background: #fff;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper.button:hover{
+    width: 200px;
+
+}
+/* Icon styles */
+.icons {
+    margin-top: 20px;
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(1turn);
+    }
+}
